@@ -1,0 +1,313 @@
+$light-color: #0275d8;
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+    }
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+
+    ul {
+        margin: 0;
+        }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+// Header Section or First Section
+.headsection1 {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 50% auto;
+
+        .icon-list {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .icon-items {
+            padding-right: 1em;
+        }
+        
+    }
+
+.headsection2 {
+    text-align: center;
+}
+
+.headsection3 {
+    .icon-list {
+        display: flex;
+        justify-content: center;
+    }
+    .icon-items {
+        padding-right: 1em;
+    }
+}
+// End First or Header Section
+
+
+// Second Section
+.secondSection {
+    display: grid;
+    grid-template-columns: 50% auto;  
+    gap: 20px;
+
+    div {
+        display: inherit;
+        height: 400px;
+        margin: 40px 0px 40px 0px;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+
+        h6 {
+            padding-top: 150px;
+        }
+    }
+  
+}
+// End Second Section
+
+// Third Section
+.thirdSection {
+    display: grid;
+    padding: 3em 0em 3em 0em;
+    h1 {
+        text-align: center; 
+        padding-bottom: 1em;
+    }
+    
+    .thirdSection3a {
+        display: flex;
+        gap: 20px;
+
+        div {
+            display: inherit;
+            background-color: rgb(226, 226, 226);
+            width: 25%;
+            height: 250px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+    }
+    .thirdSection3b {
+        display: flex;
+        padding-top: 20px;
+        gap: 20px;
+
+        div {
+            display: inherit;
+            background-color: rgb(226, 226, 226);
+            width: 25%;
+            height: 250px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+    }
+}
+// End Third Section
+
+// Start Fourth Section 
+.fourthSection {
+    display: grid;
+    grid-template-columns: 50% auto;
+    padding: 3em 0em 3em 0em;
+    gap: 20px;
+    
+    .fourthSection4a {
+        display: inherit;
+        background-color: #fff;
+        width: 85%;
+        padding: 20px;
+
+        
+        div {
+            display: flex;
+            height: 200px;
+            background-color: rgb(241, 241, 241);
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            padding-top: 10px;
+        }
+        button {
+            float: center!important;
+        }
+    }
+
+    .fourthSection4b {
+        ul {
+            display: flex;
+            padding: 40px 0px 40px 0px;
+            li:first-child {
+                padding-left: 0px;
+            }
+            li {
+                padding: 15px;
+                a {
+                    border: 1px solid black;
+                    padding: 25px;
+                    border-radius: 100px;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+// End Fourth Section
+
+// Start Fifth Section
+.fifthSection {
+    display: grid;
+    grid-template-columns: 52% auto;
+    padding: 3em 0em 3em 0em;
+
+    .fifthSection5a {
+        display: inherit;
+        grid-template-columns: 10% auto;
+        grid-template-areas: "ff ff";
+        margin-left: 20px;
+        padding: 20px;
+        background-color: rgb(252, 252, 252);
+        gap: 10px;
+        
+        .fifthSection5a1 {
+            grid-area: ff;
+        }
+        .fifthSection5a2 {
+            i {
+                font-size: 40px;
+            }
+        }
+    }
+    .fifthSection5b {
+        display: inherit;
+        div {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            background-color: rgb(226, 226, 226);
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .fifthSection5c {
+        margin-top: 30px;
+        margin-left: 20px;
+        padding: 20px;
+        border-right: 1px solid gray;
+    }
+    .fifthSection5d {
+        margin: 30px 0px 30px 0px;
+        padding: 20px;
+    }
+}
+// End Fifth Section
+
+// Start Sixth Section
+.sixthSection {
+    display: grid;
+    // grid-template-columns: 25% ;
+    // grid-template-areas: "sa sa";
+    padding: 3em 0em 3em 0em;
+
+    .sixthSection6a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sixthSection6b {
+        display: flex;
+        $colortext: #fff;
+        div {
+            display: inline-block;
+            width: 25%;
+            height: auto;
+            text-align: center;
+            padding: 20px;
+            overflow-y: hidden;
+            color: $colortext;
+
+            i {
+                background-color: $colortext;
+                padding: 20px 21px 20px 21px;
+                border: 1px solid gray;
+                border-radius: 50px;
+                align-items: center;
+                color: gray;
+            }
+
+            p {
+                padding: 20px 35px 0px 35px;
+            }
+            a {
+                color: $colortext;
+            }
+        }
+        // grid-area: sb;
+    }
+}
+// End Sixth Section
+
+// Start Seventh Section
+.seventhSection {
+    display: grid;
+    padding: 3em 0em 3em 0em;
+
+    ul {
+        padding-left: 0;
+    }
+    .seventhSection7a {
+        display: flex;
+
+        div {
+            width: 25%;
+        }
+    }
+}
+// End Seventh Section
+
+// Start Eight Section or footer
+
+.eightSection {
+    display: grid;
+    padding: 3em 0em 3em 0em;
+}
+
+.seventhSection8a {
+    display: flex;
+    div {
+        width: 50%;
+    }
+    div:first-child {
+        display: inherit;
+        gap:20px
+    }
+    div:last-child {
+        display: inherit;
+        justify-content: center;
+    }
+}
+// End Eight Section
